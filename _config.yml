@@ -9,8 +9,8 @@
 title: Mike Bowman
 email: mbowman2@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  I'm a learning web development at Bitmaker Labs, in Toronto.
-  I'm hoping to find a job in the industry once I'm done.
+  Aspiring web developer in Toronto. Check out my github or twitter pages,
+  or just send me an email!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://bowmanmike.github.io" # the base hostname & protocol for your site
 twitter_username: mbowman2

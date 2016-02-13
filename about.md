@@ -1,15 +1,9 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+I'm an aspiring web developer from Toronto. I'm currently learning full stack development at [Bitmaker Labs](http://www.bitmakerlabs.com), here in Toronto. I'm interested in Ruby on Rails development, and trying to learn more about the front-end too! I'm always looking to improve my CSS skills, and I've been working lately on adding Javascript and jQuery to my arsenal. In the future, I plan on becoming familiar with a front-end Javacsript framework (though I'm not yet sure which one), and really solidifying my skills with Rails.
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+I'm looking get my foot in the door in the web industry in Toronto, whether through freelance work, a full-time position at a small or medium sized company in the city, or an internship/apprenticeship type program.
