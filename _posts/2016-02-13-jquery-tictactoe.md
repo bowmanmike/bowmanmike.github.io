@@ -4,9 +4,11 @@ permalink: /projects/tictactoe
 custom_js: tictactoe
 custom_css: tictactoe
 layout: page
+date: 2016-02-13
 ---
 
-<h1>jQuery Tic Tac Toe</h1>
+A simple, two-player Tic Tac Toe game written in vanilla Javacsript and jQuery.
+
 <table cellspacing="0" cellpadding="0">
   <tr>
     <td id="cell-02"></td>
@@ -26,7 +28,3 @@ layout: page
     <td id="cell-20"></td>
   </tr>
 </table>
-
-<h4><strong>Mike Bowman</strong></h4>
-<h5>Bitmaker Labs, Toronto</h5>
-<h5>2016</h5>
