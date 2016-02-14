@@ -6,6 +6,10 @@ permalink: /projects/
 
 #### Here's a few projects I've been working on lately!
 
+[jQuery Tic Tac Toe](/projects/tictactoe) is a simple Tic Tac Toe game, made entirely with Javascript and jQuery.
+Check it out on [github](https://github.com/bowmanmike/jquery_tictactoe)!
+![jQuery Tic Tac Toe](/assets/tictactoe_screenshot.png)
+
 [BeOurGuest](http://evening-reaches-50428.herokuapp.com) is a group project that's meant to simulate a restaurant reservation system like OpenTable. Create an account, create a restaurant, and make a reservation!
 Check it out on [github](http://github.com/bowmanmike/seatyourself)!
 ![BeOurGuest](/assets/beourguest_screenshot.png)
