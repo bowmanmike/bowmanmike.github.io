@@ -9,10 +9,10 @@
 title: Mike Bowman
 email: mbowman2@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Aspiring web developer in Toronto. Check out my github or twitter pages,
-  or just send me an email!
+  Aspiring web developer in Toronto. Learning Ruby on Rails,
+  as well as improving my front-end skills. Get in touch!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://bowmanmike.github.io" # the base hostname & protocol for your site
+url: "http://bowmanmike.com" # the base hostname & protocol for your site
 twitter_username: mbowman2
 github_username:  bowmanmike
 
