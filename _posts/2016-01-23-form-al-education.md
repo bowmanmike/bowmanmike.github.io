@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Form-Al Education
+date: 2016-01-23
 ---
 
 And thus ends week two at Bitmaker. Another week of knowledge and information endlessly being thrown at us, like a child throwing spaghetti at the wall (Not sure that’s real imagery, but I’m into it). The past week was largely spent wrestling our previously mentioned command-line address book program into a fully-fledged, database-backed, web app.

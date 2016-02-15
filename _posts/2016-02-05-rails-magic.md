@@ -1,5 +1,7 @@
 ---
 layout: post
+date: 2016-02-05
+title: Rails Magic
 ---
 
 Rails is magic. There. I said it. And I’m learning how to use it. I had a bit of a breakthrough this week. As I may have mentioned previously, Rails is smart. It *knows* stuff that it really seems to have no right to know. But it’s also surprisingly intuitive. If you know what you want to do, all you have to do is type it out. In semi-plain English. Once you work out the normal syntax quirks (underscores and colons and the like), everything falls into place. Want to put a link somewhere? *link_to*. Where should the link go? The new user page? Easy enough. *link_to “New User”, new_user_path*. Done. Need to create a form to create a new user? *form_for @user*. Honestly, it’s that easy.
