@@ -2,38 +2,64 @@
 var xCoords = [];
 var oCoords = [];
 var turn = 0;
-var boardSize = 3;
 
 $(document).ready(function() {
 
-  // Add player markers on table click, incremnt turn counter
-  $('td').one('click', function() {
-    var self = $(this)
 
-    if (turn % 2) {
-      self.html('O');
-      var coords = [self.attr('id').slice(-2, -1), self.attr('id').slice(-1)]
-      oCoords.push(coords);
-      console.log("O: " + oCoords);
-      self.addClass('o')
-    } else {
-      self.html('X');
-      var coords = [self.attr('id').slice(-2, -1), self.attr('id').slice(-1)]
-      xCoords.push(coords);
-      console.log("X: " + xCoords);
-      self.addClass('x')
-    }
-
-    turn++;
-
-    // Check to see if any game over conditions exist
-      checkForGameOver();
-
+  $('#generate-board-button').on('click', function() {
+    boardSize = parseInt($('#boardSize').val());
+    generateBoard(boardSize);
   });
+
+  // Generate board based on user input
+  function generateBoard(size) {
+    $('#game').append("<table cellpadding=\'0\' cellspacing=\'0\' id=\'tictactoe-board\'></table>")
+    var board = $('#tictactoe-board');
+    for (i = 0; i < size + 1; i++) {
+      board.append("<tr id=\'row-" + (i+1) + "\'></tr>");
+      var row = $('#row-' + i);
+      for (j = 0; j < size; j++) {
+        row.append("<td id=\'column-" + (i - 1) + (j) + "\'></td>'")
+      };
+    };
+    // Set cell size to a percentage of the total parent width
+    var parentWidth = $('#game').width();
+    $('td').width(parentWidth / size).height(parentWidth / size)
+    var cellSize = $('td').width()
+    $('td').css('font-size', (cellSize - (cellSize*0.25)))
+    $('#setup').remove();
+
+    // Add player markers on table click, increment turn counter,
+    // Push coordinates to player array
+    $('td').one('click', function() {
+      var self = $(this)
+
+      if (turn % 2) {
+        self.html('O');
+        var coords = [self.attr('id').slice(-2, -1), self.attr('id').slice(-1)]
+        oCoords.push(coords);
+        self.addClass('o')
+      } else {
+        self.html('X');
+        var coords = [self.attr('id').slice(-2, -1), self.attr('id').slice(-1)]
+        xCoords.push(coords);
+        self.addClass('x')
+      }
+
+      turn++;
+
+      // Check to see if any game over conditions exist
+        checkForGameOver();
+
+    });
+  }
+
+
 });
 
 function checkForGameOver() {
 
+  // Sort x and y coordinates from each player array
   var winner = false;
   function parseCoordinates(playerCoordinates) {
     for (i = 0; i < playerCoordinates.length; i++) {
@@ -52,6 +78,7 @@ function checkForGameOver() {
     };
   }
 
+  // Check to see if x coordinates match
   function compareXCoordinates(playerName) {
     for (i = 0; i < xComparison.length; i++ ) {
       if (xComparison.filter(function(coordinate) {
@@ -65,6 +92,7 @@ function checkForGameOver() {
     }
   }
 
+  // Check to see if y coordinates match
   function compareYCoordinates(playerName) {
     for (i = 0; i < yComparison.length; i++ ) {
       if (yComparison.filter(function(coordinate) {
@@ -78,6 +106,7 @@ function checkForGameOver() {
     }
   }
 
+  // Check for x === y
   function compareXYCoordinates(playerName) {
     for (i = 0; i < xyComparison.length; i++ ) {
       if (xyComparison.filter(function(coordinate) {
@@ -91,6 +120,7 @@ function checkForGameOver() {
     }
   }
 
+  // Check for x === (boardSize - y)
   function compareYXCoordinates(playerName) {
     for (i = 0; i < yxComparison.length; i++ ) {
       if (yxComparison.filter(function(coordinate) {
@@ -104,6 +134,7 @@ function checkForGameOver() {
     }
   }
 
+  // Compare win conditons for each player
   function checkWinConditions(playerName) {
     if (winner === false) {
       compareXCoordinates(playerName);
@@ -118,7 +149,8 @@ function checkForGameOver() {
       compareYXCoordinates(playerName);
     }
   }
-// Determine if X wins
+
+  // Determine if X wins
   if (xCoords.length >= boardSize) {
     var playerName = "X"
     var xComparison = [];
@@ -143,12 +175,14 @@ function checkForGameOver() {
     checkWinConditions(playerName);
 
   }
+
 // Return a tie
   if (turn === Math.pow(boardSize, 2) && winner === false) {
     alert('It\'s a tie!');
     endGame();
   }
 
+  // Turn off listeners, ask if player wants to play again
   function endGame() {
     $('td').off();
     var playAgain = confirm('Want to play again?');

@@ -5,13 +5,14 @@ html {
 
 body {
   height: 100%;
-  width: 75%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
 
 table {
   margin: 0 auto;
+  width: auto;
 }
 
 td {
@@ -34,4 +35,18 @@ td:hover {
 
 .o {
   background-color: darkgray;
+}
+
+#setup {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#boardSize {
+  text-align: center;
+}
+
+#game {
+  width: 600px;
+  margin: 0 auto;
 }
