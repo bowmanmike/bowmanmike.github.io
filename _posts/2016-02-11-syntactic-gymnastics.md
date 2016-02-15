@@ -1,5 +1,7 @@
 ---
 layout: post
+date: 2016-02-11
+title: Syntactic Gymnastics
 ---
 
 So this week’s been a bit of a change of pace. We’ve shifted gears from Ruby and Rails, and have been learning [Javascript](http://www.javascript.com). Javascript, for those who are unfamiliar, is one of the most widely used programming languages in the world (according to [these guys](https://blog.newrelic.com/2015/07/07/popular-programming-languages/), or [these guys](http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html)). It’s currently the only language that runs in ever web browser. This means that you–yes, YOU, dear reader, have access to Javascript in all it’s glory. Just try it out for a second here. If you’re using Google Chrome as your browser (which everyone in the world does, right?), hold down the *Command* and *Option* keys, and press “J”. For the Windows folks among us, *CTRL* + *SHIFT* + *J* is the equivalent. Something like this should appear on the side or bottom of your browser.
