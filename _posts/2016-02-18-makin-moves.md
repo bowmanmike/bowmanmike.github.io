@@ -17,3 +17,7 @@ This week we've been learning about Ajax. Ajax, for the uninformed, stands for A
 It's pretty hard to believe we're at the end of the 6th week of the program. It's flown by, and I've gotta start thinking about final project ideas already. I totally have no ideas at all, so if any of you have any cool app ideas, send them my way! Next week we do a final big assignment. Starting the week after, we spend the rest of the course working on our final projects, up until our official presentation day on the 22nd (I think) of March.
 
 As always, thanks for reading, those of you who make it this far. Since I'm not using Medium anymore, I don't get their cool readership statistics. I've hooked up this site with Google Analytics, but the information they send my way is, so far at least, suuuuuuuper sophisticated and detailed, but it'll be a while before I figure out where the meaningful data on that page is. But that's also kinda fun.
+
+Anyways, that's it for the moment. I wanna get some more work done tonight on Bwitter, our tiny little Twitter clone for practicing Ajax. (Yes, it's a mix of Twitter and Bitmakaer) (Yes, Twitmaker would've been a better name. Our teacher knows this) (But if it were called Twitmaker, they'd be called Twits, which isn't as funny as Bweets) So thanks for reading, I hope you like my shiny new platform! Check it out, poke around, tell me about things that are broken or whatever, or make suggestions. I've got a list of things to tweak so far, but anything y'all notice would be helpful!
+
+Enjoy the weekend, and may the force be with you.
