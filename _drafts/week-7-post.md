@@ -1,0 +1,13 @@
+---
+Title: Excuses
+Date: 2016-02-26
+Layout: post
+---
+
+This post is a bit later than I'd hope it'd be, but I've got excuses! Legitimate ones! And lots of interesting things to talk about too, so, in the immortal words of Samuel L. Jackson in Jurassic Park, "Hold on to your butts."
+
+First, the excuses. We've been working on a fairly substantial rails project this past week. Called *Crowdfunder*, it's a clone of [Kickstarter](http://kickstarter.com). We got into groups to tackle it, because it really was a substantial assignment. After two late nights at the office, things were going well on the project. Which is exactly when a friendly flu virus decided it'd be a great time to lodge itself in my respiratory tract. So I spent yesterday basically in bed the entire day. Today's been a bit better, but I stayed home from school again today. Things have been improving all day, so I'm optimistic for a quick recovery.
+
+The real impetus for missing these two days of school (and thus two days of collaboration on Crowdfunder with my 3 group-mates, who were all-too accommodating of my untimely illness), was that I need to be truly 100% cured by Monday. Why Monday, you ask? Because on Monday, we kick off official work on our final projects. Two weeks to put together an app that we can be proud of, to show off to our teachers and classmates. Then another ten days to polish and tweak it to impress somebody enough for them to want to give me a job. It's a big task (side note, I can't believe that I'm about to start week 8 of this course. But that's a topic for another post.), and I suspect it'll require a lot of late nights at Bitmaker, so I want to be 100% for when that starts.
+
+Last Monday, we got to experience *Kitten's Den*, which is like Dragon's Den, but less intimidating. In the words of our instructor Mina, "We're here to tell you whether your idea is awesome, or too awesome." So really not intimidating at all. Anyone who wanted to (most people in the class ended up presenting something) could go up and give a 5 minute pitch to the class and the instructors about final project ideas. The teachers gave feedback and tips on the idea, and we were able to use the presentation to try and recruit team members for the project. Some people already had groups and projects figured out, but I was no one. In fact, I had no idea at all what I'd do for my final project, until about Sunday night, when I came up with a pretty fun idea. I pitched my idea, the teachers thought it was a solid final project, and I put together a 3 person team to tackle it. I'm super excited to get going on it, and I think we'll be able to do something pretty cool. 
