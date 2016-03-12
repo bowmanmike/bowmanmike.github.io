@@ -6,18 +6,22 @@ permalink: /projects/
 
 #### Here's a few projects I've been working on lately!
 
+[chortal](http://chortal.herokuapp.com) is an app I built in a team of three for my final project at Bitmaker's web development bootcamp. It's a platform to allow roommates to easily manage shared household chores and finances.
+Check out the [git repo](https://github.com/pcruiksh/rmmts)!
+![chortal](/assets/chortal_screenshot.png)
+
 [jQuery Tic Tac Toe]({% post_url 2016-02-13-jquery-tictactoe %}) is a simple Tic Tac Toe game, made entirely with Javascript and jQuery.
-Check it out on [github](https://github.com/bowmanmike/jquery_tictactoe)!
+Check out the [git repo](https://github.com/bowmanmike/jquery_tictactoe)!
 ![jQuery Tic Tac Toe](/assets/tictactoe_screenshot.png)
 
 [BeOurGuest](http://evening-reaches-50428.herokuapp.com) is a group project that's meant to simulate a restaurant reservation system like OpenTable. Create an account, create a restaurant, and make a reservation!
-Check it out on [github](http://github.com/bowmanmike/seatyourself)!
+Check out the [git repo](http://github.com/bowmanmike/seatyourself)!
 ![BeOurGuest](/assets/beourguest_screenshot.png)
 
 [Rainforest](http://damp-cliffs-11542.herokuapp.com/) is an Amazon-type site. Log in, add a product, and share reviews!  
-Check it out on [github](https://github.com/bowmanmike/rainforest)!
+Check out the  [git repo](https://github.com/bowmanmike/rainforest)!
 ![Rainforest](/assets/rainforest_screenshot.png)
 
 [Photogur](https://immense-peak-73305.herokuapp.com/pictures) is a barebones clone of imgur. Add a photo!  
-Check it out on [github](https://github.com/bowmanmike/photogur)!
+Check out the  [git repo](https://github.com/bowmanmike/photogur)!
 ![Photogur](/assets/photogur_screenshot.png)
