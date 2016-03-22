@@ -10,18 +10,18 @@ permalink: /projects/
 Check out the [git repo](https://github.com/pcruiksh/rmmts)!
 ![chortal](/assets/chortal_screenshot.png)
 
-[jQuery Tic Tac Toe]({% post_url 2016-02-13-jquery-tictactoe %}) is a simple Tic Tac Toe game, made entirely with Javascript and jQuery.
+[jQuery Tic Tac Toe]({% post_url 2016-02-13-jquery-tictactoe %}) is a simple Tic Tac Toe game, made entirely with Javascript and jQuery. You can generate a board of any size, and the game uses an algorithm to check for a winning combination of squares after every turn.
 Check out the [git repo](https://github.com/bowmanmike/jquery_tictactoe)!
 ![jQuery Tic Tac Toe](/assets/tictactoe_screenshot.png)
 
-[BeOurGuest](http://evening-reaches-50428.herokuapp.com) is a group project that's meant to simulate a restaurant reservation system like OpenTable. Create an account, create a restaurant, and make a reservation!
+[BeOurGuest](http://evening-reaches-50428.herokuapp.com) is a group project that's meant to simulate a restaurant reservation system like OpenTable. Users can create an account and make a reservation at the restaurants available on the site.
 Check out the [git repo](http://github.com/bowmanmike/seatyourself)!
 ![BeOurGuest](/assets/beourguest_screenshot.png)
 
-[Rainforest](http://damp-cliffs-11542.herokuapp.com/) is an Amazon-type site. Log in, add a product, and share reviews!  
+[Rainforest](http://damp-cliffs-11542.herokuapp.com/) is an Amazon-type site. You can sign up, add products to the site, and share reviews of those products.
 Check out the  [git repo](https://github.com/bowmanmike/rainforest)!
 ![Rainforest](/assets/rainforest_screenshot.png)
 
-[Photogur](https://immense-peak-73305.herokuapp.com/pictures) is a barebones clone of imgur. Add a photo!  
+[Photogur](https://immense-peak-73305.herokuapp.com/pictures) is a barebones clone of imgur. My first ever Rails app, so it's kiiiiiiiiinda a big deal. (Not actually though).
 Check out the  [git repo](https://github.com/bowmanmike/photogur)!
 ![Photogur](/assets/photogur_screenshot.png)

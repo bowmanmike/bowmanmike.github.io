@@ -4,7 +4,7 @@ permalink: /contact/
 title: Contact
 ---
 
-Get at me!
+Get in touch!
 
 Email: [mbowman2@gmail.com](mailto:mbowman2@gmail.com)  
 twitter: [mbowman2](http://twitter.com/mbowman2)  
