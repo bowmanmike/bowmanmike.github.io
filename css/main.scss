@@ -2,7 +2,8 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
-
+@import "bourbon/bourbon";
+@import "neat/neat";
 
 
 // Our variables
@@ -25,8 +26,11 @@ $grey-color-dark:  darken($grey-color, 25%);
 // Width of the content area
 $content-width:    800px;
 
-$on-palm:          600px;
+$small-screen: 600px;
 $on-laptop:        800px;
+
+$small-screen-only: new-breakpoint(max-width ($small-screen - 1px));
+$medium-screen-up: new-breakpoint(min-width ($small-screen));
 
 
 

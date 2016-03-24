@@ -1,10 +1,20 @@
 ---
 ---
+@import "bourbon/bourbon";
+@import "neat/neat";
 
 .index-header {
   text-align: center;
+
+  @include media($medium-screen-up) {
+    text-align: left;
+  }
 }
 
 #index-profile-photo {
   border-radius: 50%;
+
+  @include media($medium-screen-up) {
+    border-radius: 0;
+  }
 }
