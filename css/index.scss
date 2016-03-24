@@ -1,7 +1,6 @@
----
----
-@import "bourbon/bourbon";
-@import "neat/neat";
+.content {
+  @include outer-container;
+}
 
 .index-header {
   text-align: center;
