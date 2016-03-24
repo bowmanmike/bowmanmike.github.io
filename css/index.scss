@@ -1,4 +1,10 @@
-.content {
+---
+---
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "variables";
+
+.wrapper {
   @include outer-container;
 }
 

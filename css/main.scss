@@ -2,7 +2,9 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
-
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "variables";
 
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -52,9 +54,7 @@ $medium-screen-up: new-breakpoint(min-width ($small-screen));
 @import
         "base",
         "layout",
-        "syntax-highlighting",
-        "bourbon/bourbon",
-        "neat/neat"
+        "syntax-highlighting"
 ;
 
 .about-portrait {
