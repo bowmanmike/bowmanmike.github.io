@@ -5,10 +5,20 @@ custom_css: index
 ---
 
 <div class="index-header">
-  <h1>Mike Bowman</h1>
-  <h2>Full Stack Developer</h2>
+  <div class="index-header-text">
+    <h1>Mike Bowman</h1>
+    <h2>Full Stack Developer</h2>
+  </div>
 
   <div class="profile-photo">
     <img src="assets/bitmaker_portrait_cropped.jpg" alt="Mike Bowman" id="index-profile-photo">
   </div>
+</div>
+
+<div class="index-nav">
+  {% for my_page in site.pages %}
+    {% if my_page.title %}
+        <a class="index-page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+    {% endif %}
+  {% endfor %}
 </div>

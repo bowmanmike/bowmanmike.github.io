@@ -4,22 +4,38 @@
 @import "neat/neat";
 @import "variables";
 
+body {
+  background-color: $background-color;
+}
+
 .wrapper {
   @include outer-container;
 }
 
 .index-header {
   text-align: center;
+  font-family: $header-font-family;
 
   @include media($medium-screen-up) {
     text-align: left;
   }
 }
 
-#index-profile-photo {
-  border-radius: 50%;
+.index-header-text {
+  @include span-columns(12);
+  color: $brand-color;
 
   @include media($medium-screen-up) {
-    border-radius: 0;
+    @include span-columns(4);
+  }
+}
+
+#index-profile-photo {
+  border-radius: 50%;
+  height: 15rem;
+
+  @include media($medium-screen-up) {
+    // border-radius: 0;
+    @include span-columns(4);
   }
 }
