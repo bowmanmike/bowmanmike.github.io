@@ -16,9 +16,13 @@ custom_css: index
 </div>
 
 <div class="index-nav">
-  {% for my_page in site.pages %}
-    {% if my_page.title %}
-        <a class="index-page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-    {% endif %}
-  {% endfor %}
+  <ul class="index-nav-links">
+    {% for my_page in site.pages %}
+      {% if my_page.title %}
+          <li class="index-nav-list-item">
+            <a class="index-page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+          </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 </div>

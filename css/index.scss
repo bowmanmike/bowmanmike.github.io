@@ -4,8 +4,13 @@
 @import "neat/neat";
 @import "variables";
 
+html {
+  min-height: 100%;
+}
+
 body {
   background-color: $background-color;
+  height: 100%;
 }
 
 .wrapper {
@@ -35,7 +40,23 @@ body {
   height: 15rem;
 
   @include media($medium-screen-up) {
-    // border-radius: 0;
     @include span-columns(4);
+  }
+}
+
+.index-nav {
+  @include span-columns(10);
+  @include shift(1);
+}
+
+.index-nav-links {
+  list-style-type: none;
+  margin-top: 5rem;
+
+  .index-nav-list-item {
+    display: inline-block;
+    width: auto;
+    // padding: 0.rem;
+    border: 2px solid $brand-color;
   }
 }
