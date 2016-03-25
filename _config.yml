@@ -19,4 +19,5 @@ github_username:  bowmanmike
 markdown: kramdown
 
 collections:
-  - projects
+  projects:
+    output: true

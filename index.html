@@ -42,6 +42,6 @@ custom_css: index
 <div class="index-projects">
   {% assign projects = (site.projects | sort "date" | reverse) %}
   {% for project in projects %}
-    <p>{{ project.title }}</p>
+    <a href="{{ project.url | prepend: site.baseurl }}" class="index-project-link">{{ project.title }}</a>
   {% endfor %}
 </div>
