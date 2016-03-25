@@ -40,7 +40,8 @@ custom_css: index
 </div>
 
 <div class="index-projects">
-  {% for project in site.projects %}
+  {% assign projects = (site.projects | sort "date" | reverse) %}
+  {% for project in projects %}
     <p>{{ project.title }}</p>
   {% endfor %}
 </div>

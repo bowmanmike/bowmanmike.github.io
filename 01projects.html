@@ -4,9 +4,17 @@ title: Projects
 permalink: /projects/
 ---
 
-#### Here's a few projects I've been working on lately!
+{% assign projects = (site.projects | sort "date" | reverse)%}
+{% for project in projects %}
+  <div class="each-project">
+    <span class="each-project-title">{{ project.title }}</span>
+    <p class="each-project-content">
+      {{ project }}
+    </p>
+  </div>
+{% endfor %}
 
-[chortal](http://chortal.herokuapp.com) is an app I built in a team of three for my final project at Bitmaker's web development bootcamp. It's a platform to allow roommates to easily manage shared household chores and finances.
+<!-- [chortal](http://chortal.herokuapp.com) is an app I built in a team of three for my final project at Bitmaker's web development bootcamp. It's a platform to allow roommates to easily manage shared household chores and finances.
 Check out the [git repo](https://github.com/pcruiksh/rmmts)!
 ![chortal](/assets/chortal_screenshot.png)
 
@@ -24,4 +32,4 @@ Check out the  [git repo](https://github.com/bowmanmike/rainforest)!
 
 [Photogur](https://immense-peak-73305.herokuapp.com/pictures) is a barebones clone of imgur. My first ever Rails app, so it's kiiiiiiiiinda a big deal. (Not actually though).
 Check out the  [git repo](https://github.com/bowmanmike/photogur)!
-![Photogur](/assets/photogur_screenshot.png)
+![Photogur](/assets/photogur_screenshot.png) -->
