@@ -45,8 +45,24 @@ body {
 
 .index-nav {
   @include span-columns(7);
-  border: 1px solid black;
-  list-style-type: none;
+  text-align: left;
+  
+  .index-nav-list {
+    list-style-type: none;
+    margin: auto;
+
+    .index-nav-list-item {
+      margin-bottom: 0.2rem;
+
+      i {
+        margin-right: 0.2rem;
+      }
+
+      a {
+        color: black;
+      }
+    }
+  }
 }
 
 .index-blog {
