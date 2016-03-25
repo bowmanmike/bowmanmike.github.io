@@ -17,3 +17,6 @@ github_username:  bowmanmike
 
 # Build settings
 markdown: kramdown
+
+collections:
+  - projects

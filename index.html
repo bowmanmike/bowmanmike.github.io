@@ -15,7 +15,7 @@ custom_css: index
   </div>
 </div>
 
-<div class="index-nav">
+<!-- <div class="index-nav">
   <ul class="index-nav-links">
     {% for my_page in site.pages %}
       {% if my_page.title %}
@@ -25,4 +25,20 @@ custom_css: index
       {% endif %}
     {% endfor %}
   </ul>
+</div> -->
+
+<div class="index-blog">
+  {% for post in site.posts limit:3 %}
+    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <h2>
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </h2>
+    <div class="index-post-excerpt">
+      {{ post.excerpt }}
+    </div>
+  {% endfor %}
+</div>
+
+<div class="index-projects">
+
 </div>

@@ -44,19 +44,13 @@ body {
   }
 }
 
-.index-nav {
-  @include span-columns(10);
-  @include shift(1);
-}
+.index-blog {
 
-.index-nav-links {
-  list-style-type: none;
-  margin-top: 5rem;
+  .index-post-excerpt {
+    display: none;
 
-  .index-nav-list-item {
-    display: inline-block;
-    width: auto;
-    // padding: 0.rem;
-    border: 2px solid $brand-color;
+    @include media($medium-screen-up) {
+      display: block;
+    }
   }
 }
