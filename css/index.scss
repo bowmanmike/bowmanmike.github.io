@@ -46,7 +46,7 @@ body {
 .index-nav {
   @include span-columns(7);
   text-align: left;
-  
+
   .index-nav-list {
     list-style-type: none;
     margin: auto;
@@ -72,6 +72,12 @@ body {
   margin: 1rem auto;
   background-color: $grey-color-light;
 
+  @include media($medium-screen-up) {
+    @include span-columns(7);
+    display: block;
+    height: auto;
+  }
+
   .index-post-link {
     color: black;
   }
@@ -91,6 +97,12 @@ body {
   overflow: auto;
   text-align: center;
   background-color: $grey-color-light;
+
+  @include media($medium-screen-up) {
+    @include span-columns(5);
+    height: auto;
+    margin: 1rem auto;
+  }
 
   .index-project-link {
     display: block;
