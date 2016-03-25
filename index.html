@@ -40,5 +40,7 @@ custom_css: index
 </div>
 
 <div class="index-projects">
-
+  {% for project in site.projects %}
+    <p>{{ project.title }}</p>
+  {% endfor %}
 </div>
