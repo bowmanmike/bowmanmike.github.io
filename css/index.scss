@@ -19,7 +19,6 @@ body {
 
 .index-header {
   text-align: center;
-  font-family: $header-font-family;
 
   @include media($medium-screen-up) {
     text-align: left;
@@ -29,6 +28,7 @@ body {
 .index-header-text {
   @include span-columns(12);
   color: $brand-color;
+  font-family: $header-font-family;
 
   @include media($medium-screen-up) {
     @include span-columns(4);
@@ -46,6 +46,7 @@ body {
 .index-nav {
   @include span-columns(7);
   border: 1px solid black;
+  list-style-type: none;
 }
 
 .index-blog {
