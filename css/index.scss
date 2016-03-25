@@ -36,15 +36,28 @@ body {
 }
 
 #index-profile-photo {
-  border-radius: 50%;
-  height: 15rem;
+  @include span-columns(5);
 
   @include media($medium-screen-up) {
     @include span-columns(4);
   }
 }
 
+.index-nav {
+  @include span-columns(7);
+  border: 1px solid black;
+}
+
 .index-blog {
+  @include span-columns(12);
+  height: 7rem;
+  overflow: auto;
+  margin: 1rem auto;
+  background-color: $grey-color-light;
+
+  .index-post-link {
+    color: black;
+  }
 
   .index-post-excerpt {
     display: none;
@@ -52,5 +65,19 @@ body {
     @include media($medium-screen-up) {
       display: block;
     }
+  }
+}
+
+.index-projects {
+  @include span-columns(12);
+  height: 7rem;
+  overflow: auto;
+  text-align: center;
+  background-color: $grey-color-light;
+
+  .index-project-link {
+    display: block;
+    font-size: 1.2rem;
+    color: black;
   }
 }

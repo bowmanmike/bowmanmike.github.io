@@ -10,28 +10,17 @@ custom_css: index
     <h2>Full Stack Developer</h2>
   </div>
 
-  <div class="profile-photo">
-    <img src="assets/bitmaker_portrait_cropped.jpg" alt="Mike Bowman" id="index-profile-photo">
+  <img src="assets/bitmaker_portrait_cropped.jpg" alt="Mike Bowman" id="index-profile-photo">
+  <div class="index-nav">
+    CONTENT!
   </div>
 </div>
-
-<!-- <div class="index-nav">
-  <ul class="index-nav-links">
-    {% for my_page in site.pages %}
-      {% if my_page.title %}
-          <li class="index-nav-list-item">
-            <a class="index-page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-          </li>
-      {% endif %}
-    {% endfor %}
-  </ul>
-</div> -->
 
 <div class="index-blog">
   {% for post in site.posts limit:3 %}
     <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
     <h2>
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <a class="index-post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     </h2>
     <div class="index-post-excerpt">
       {{ post.excerpt }}
