@@ -136,25 +136,23 @@ body {
 }
 
 .index-nav {
-  @include span-columns(7);
-  text-align: left;
+  @include span-columns(12);
+  text-align: center;
   margin-top: 2rem;
 
   .index-nav-list {
+    @include span-columns(12);
     list-style-type: none;
     margin: auto;
 
     .index-nav-list-item {
       margin-bottom: 0.2rem;
       display: inline-block;
-
-      i {
-        margin-right: 0.2rem;
-      }
+      @include span-columns(3);
 
       a {
         color: black;
-        font-size: 0.9rem;
+        font-size: 2rem;
       }
     }
   }
