@@ -29,6 +29,12 @@ body {
   @include span-columns(12);
   color: $brand-color;
   font-family: $header-font-family;
+  background-color: $grey-color-light;
+  margin-bottom: 0.2rem;
+
+  h1 {
+    margin-bottom: 0.25rem;
+  }
 
   @include media($medium-screen-up) {
     @include span-columns(4);
@@ -37,15 +43,19 @@ body {
 
 #index-profile-photo {
   @include span-columns(5);
+  border-radius: 5px;
+  margin-bottom: 1rem;
 
   @include media($medium-screen-up) {
     @include span-columns(4);
+    @include shift(4);
   }
 }
 
 .index-nav {
   @include span-columns(7);
   text-align: left;
+  margin-top: 2rem;
 
   .index-nav-list {
     list-style-type: none;
@@ -60,7 +70,21 @@ body {
 
       a {
         color: black;
+        font-size: 0.9rem;
       }
+    }
+  }
+}
+
+.index-content {
+  @include span-columns(12);
+
+  .index-content-header {
+    margin-bottom: 0.6rem;
+    font-family: $header-font-family;
+
+    a {
+      color: black;
     }
   }
 }
@@ -70,6 +94,7 @@ body {
   height: 7rem;
   overflow: auto;
   margin: 1rem auto;
+  margin-top: 0.25rem;
   background-color: $grey-color-light;
 
   @include media($medium-screen-up) {
@@ -78,8 +103,13 @@ body {
     height: auto;
   }
 
+  h2 {
+    margin-bottom: 0.3rem;
+  }
+
   .index-post-link {
     color: black;
+    font-size: 1.2rem;
   }
 
   .index-post-excerpt {
