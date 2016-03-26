@@ -22,6 +22,33 @@ custom_css: index
 </div>
 
 <div class="index-content">
+  <a href="{{ site.url }}/blog" class="index-section-header"><h3>--- Blog ---</h3></a>
+  <div class="index-blog">
+    {% for post in site.posts limit:1 %}
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <h2>
+        <a class="index-post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+      <div class="index-post-excerpt">
+        {{ post.excerpt }}
+      </div>
+    {% endfor %}
+  </div>
+
+  <a href="{{ site.url }}/projects" class="index-section-header"><h3>--- Recent Projects ---</h3></a>
+  <div class="index-projects">
+    <ul class="index-project-list">
+      {% assign projects = (site.projects | sort "date" | reverse) %}
+      {% for project in projects limit: 2 %}
+        <a href="{{ project.url | prepend: site.baseurl }}" class="index-project-link">
+          <li class="index-project-list-item">{{ project.title }}</li>
+        </a>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<!-- <div class="index-content">
   <h3 class="index-content-header"><a href="{{ site.url }}/blog/">Recent Posts</a></h3>
   <div class="index-blog">
     {% for post in site.posts limit:3 %}
@@ -42,4 +69,4 @@ custom_css: index
       <a href="{{ project.url | prepend: site.baseurl }}" class="index-project-link">{{ project.title }}</a>
     {% endfor %}
   </div>
-</div>
+</div> -->
