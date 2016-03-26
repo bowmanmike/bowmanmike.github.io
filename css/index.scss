@@ -53,15 +53,28 @@ body {
   @include span-columns(5);
   border-radius: 5px;
   margin-bottom: 1rem;
-
-  @include media($medium-screen-up) {
-    @include span-columns(5);
-  }
 }
 
 .index-about {
   @include span-columns(7);
   text-align: justify;
+}
+
+.index-skills {
+  @include span-columns(12);
+
+  .index-skills-header {
+    margin-bottom: 0.3rem;
+    font-family: $header-font-family;
+    color: $brand-color;
+    text-align: center;
+  }
+
+  .index-skill-list-item {
+    background-color: $grey-color-light;
+    border-radius: 5px;
+    display: inline-block;
+  }
 }
 
 .index-content {
@@ -162,14 +175,14 @@ body {
 
     @include media($medium-screen-up) {
       display: inline;
+      font-size: 1rem;
     }
   }
 
   @include media($medium-screen-up) {
-    @include span-columns(7);
 
     .index-nav-list-item {
-      font-size: 2rem;
+      margin-bottom: 2rem;
     }
   }
 }
