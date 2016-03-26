@@ -19,6 +19,7 @@ body {
 
 .index-header {
   text-align: center;
+  @include span-columns(12);
 
   @include media($medium-screen-up) {
     text-align: left;
@@ -26,7 +27,6 @@ body {
 }
 
 .index-header-text {
-  @include span-columns(12);
   color: $brand-color;
   font-family: $header-font-family;
   background-color: $grey-color-light;
@@ -37,7 +37,15 @@ body {
   }
 
   @include media($medium-screen-up) {
-    @include span-columns(4);
+    padding-left: 2.5rem;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -47,33 +55,13 @@ body {
   margin-bottom: 1rem;
 
   @include media($medium-screen-up) {
-    @include span-columns(4);
-    @include shift(4);
+    @include span-columns(5);
   }
 }
 
-.index-nav {
+.index-about {
   @include span-columns(7);
-  text-align: left;
-  margin-top: 2rem;
-
-  .index-nav-list {
-    list-style-type: none;
-    margin: auto;
-
-    .index-nav-list-item {
-      margin-bottom: 0.2rem;
-
-      i {
-        margin-right: 0.2rem;
-      }
-
-      a {
-        color: black;
-        font-size: 0.9rem;
-      }
-    }
-  }
+  text-align: justify;
 }
 
 .index-content {
@@ -143,6 +131,47 @@ body {
         height: 7rem;
         overflow-y: hidden;
       }
+    }
+  }
+}
+
+.index-nav {
+  @include span-columns(7);
+  text-align: left;
+  margin-top: 2rem;
+
+  .index-nav-list {
+    list-style-type: none;
+    margin: auto;
+
+    .index-nav-list-item {
+      margin-bottom: 0.2rem;
+      display: inline-block;
+
+      i {
+        margin-right: 0.2rem;
+      }
+
+      a {
+        color: black;
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .index-nav-handles {
+    display: none;
+
+    @include media($medium-screen-up) {
+      display: inline;
+    }
+  }
+
+  @include media($medium-screen-up) {
+    @include span-columns(7);
+
+    .index-nav-list-item {
+      font-size: 2rem;
     }
   }
 }

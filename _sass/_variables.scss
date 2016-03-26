@@ -18,8 +18,8 @@ $grey-color-dark:  darken($grey-color, 25%);
 // Width of the content area
 $content-width:    800px;
 
-$small-screen: 600px;
-$on-palm: 600px;
+$small-screen: 500px;
+$on-palm: 500px;
 $on-laptop: 800px;
 
 $small-screen-only: new-breakpoint(max-width ($small-screen - 1px));
