@@ -117,7 +117,6 @@ body {
   @include span-columns(12);
   height: 7rem;
   overflow: auto;
-  // background-color: $grey-color-light;
 
   @include media($medium-screen-up) {
     @include span-columns(5);
