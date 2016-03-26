@@ -41,7 +41,10 @@ custom_css: index
       {% assign projects = (site.projects | sort "date" | reverse) %}
       {% for project in projects limit: 2 %}
         <a href="{{ project.url | prepend: site.baseurl }}" class="index-project-link">
-          <li class="index-project-list-item">{{ project.title }}</li>
+          <li class="index-project-list-item">
+            <span class="index-project-title">{{ project.title }}</span>>{{ project.title }}</span>
+            <img src="{{ project.image }}" alt="{{ project.name }}" class="index-project-thumbnail">
+          </li>
         </a>
       {% endfor %}
     </ul>
