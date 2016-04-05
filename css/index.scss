@@ -1,6 +1,41 @@
 ---
 ---
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.wrapper {
+  height: 100%;
+}
+
 .index-header {
   width: 100%;
   text-align: center;
+}
+
+.index-footer {
+
+  .index-contact {
+    list-style-type: none;
+
+    .index-contact-item {
+      display: inline;
+
+      .index-contact-link {
+        color: black;
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        &:visited {
+          color: black;
+        }
+      }
+    }
+  }
 }
