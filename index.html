@@ -1,25 +1,17 @@
 ---
-layout: default
 ---
+<!DOCTYPE html>
+<html>
 
-<div class="home">
+  {{ include head.html }}
 
-  <h1 class="page-heading">Posts</h1>
+  <body>
 
-  <ul class="post-list">
-    {% for post in site.posts limit:5 %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <div class="index-header">
+      <h1>Mike Bowman</h1>
+      <h3>Full Stack Developer</h3>
+    </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-          {{ post.excerpt }}
-      </li>
-    {% endfor %}
-  </ul>
+  </body>
 
-  <a href="/archive">See all posts</a><br>
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+</html>
