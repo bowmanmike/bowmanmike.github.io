@@ -9,6 +9,16 @@ custom_css: index
   <h2>Full Stack Developer</h2>
 </div>
 
+<article class="index-blog">
+  {% for post in site.posts limit: 2 %}
+    <div class="index-each-post">
+      <h3 class="index-blog-title"><a href="{{ post.url | prepend: site.baseurl }}" class="index-blog-title-link">{{ post.title }}</a></h3>
+      <p class="index-blog-date">{{ post.date | date: "%b %-d, %Y" }}</p>
+      <section class="index-blog-excerpt">{{ post.excerpt }}</section>
+    </div>
+  {% endfor %}
+</article>
+
 <footer class="index-footer">
   <ul class="index-contact">
     <li class="index-contact-item">(647) 303-4394</li>
