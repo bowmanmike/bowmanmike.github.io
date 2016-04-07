@@ -1,5 +1,10 @@
 ---
 ---
+
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+@import 'variables';
+
 html {
   height: 100%;
 }
@@ -10,16 +15,17 @@ body {
 
 .wrapper {
   height: 100%;
+  @include outer-container;
 }
 
 .index-header {
   width: 100%;
   text-align: center;
 
-  // h1, h2 {
-  //   font-family: $header-font-family;
-  //   color: $brand-color;
-  // }
+  h1, h2 {
+    font-family: $header-font-family;
+    color: $brand-color;
+  }
 }
 
 .index-footer {
