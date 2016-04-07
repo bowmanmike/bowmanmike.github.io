@@ -12,9 +12,18 @@ custom_css: index
 <article class="index-blog">
   {% for post in site.posts limit: 2 %}
     <div class="index-each-post">
-      <h3 class="index-blog-title"><a href="{{ post.url | prepend: site.baseurl }}" class="index-blog-title-link">{{ post.title }}</a></h3>
+      <h3 class="index-blog-title"><a href="{{ post.url | prepend: site.baseurl }}" class="index-blog-link">{{ post.title }}</a></h3>
       <p class="index-blog-date">{{ post.date | date: "%b %-d, %Y" }}</p>
       <section class="index-blog-excerpt">{{ post.excerpt }}</section>
+    </div>
+  {% endfor %}
+</article>
+
+<article class="index-projects">
+  {% for project in site.projects %}
+    <div class="index-each-project">
+      <h3 class="index-project-name"><a href="{{ project.url | prepend: site.baseurl }}" class="index-project-link">{{ project.title }}</a></h3>
+      <img src="{{ project.image }}" alt="{{ project.title }}" class="index-project-image">
     </div>
   {% endfor %}
 </article>
