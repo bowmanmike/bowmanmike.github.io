@@ -7,6 +7,14 @@ custom_css: index
 <div class="index-header">
   <h1>Mike Bowman</h1>
   <h2>Full Stack Developer</h2>
+
+  <nav class="index-navbar">
+    {% for my_page in site.pages %}
+      {% if my_page.title %}
+          <a class="index-nav-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+      {% endif %}
+    {% endfor %}
+  </nav>
 </div>
 
 <article class="index-blog">
@@ -20,7 +28,8 @@ custom_css: index
 </article>
 
 <article class="index-projects">
-  {% for project in site.projects %}
+  {% assign projects = (site.projects | sort "date" | reverse) %}
+  {% for project in projects limit: 2 %}
     <div class="index-each-project">
       <h3 class="index-project-name"><a href="{{ project.url | prepend: site.baseurl }}" class="index-project-link">{{ project.title }}</a></h3>
       <img src="{{ project.image }}" alt="{{ project.title }}" class="index-project-image">
