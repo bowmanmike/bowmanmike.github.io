@@ -36,7 +36,7 @@ Here's a short version of the workflow, great if you've got completed projects y
 6. Revel in your github skills as the job offers pour in!
 
 
-###Links
+**Links**
 
 - [CLI Crash Course](http://cli.learncodethehardway.org/book/)
 - [Atlassian Git Articles](https://www.atlassian.com/git/tutorials/what-is-version-control)
