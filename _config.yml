@@ -9,9 +9,9 @@
 title: Mike Bowman
 email: mbowman2@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Toronto-based Ruby on Rails developer, and a recent graduate of Bitmaker's Web Development Immersive Bootcamp.
+  Developer, Torontonian, long-suffering sports fan, all around normal dude.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://bowmanmike.com" # the base hostname & protocol for your site
+url: "http://blog.bowmanmike.com" # the base hostname & protocol for your site
 twitter_username: mbowman2
 github_username:  bowmanmike
 
