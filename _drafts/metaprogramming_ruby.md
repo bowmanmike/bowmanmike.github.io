@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2017-03-06
+date: 2017-03-07
 title: Basic Metaprogramming in Ruby
 ---
 
