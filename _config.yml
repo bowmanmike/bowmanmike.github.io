@@ -24,3 +24,5 @@ collections:
 
 plugins:
   - jekyll-sitemap
+
+theme: jekyll-theme-hacker
